@@ -13,13 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
     - name: make
       run: make
-    - name: test
-      run: ./test
     - name: debug
       run: ./debug
+    - name: test
+      run: ./test
     - name: vectors
       run: ./vectors
